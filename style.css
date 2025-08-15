@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100vh;
+
+  font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500, 800;
+  font-style: normal;
+
+  background: hsl(47, 88%, 63%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog-card {
+  width: clamp(200px, 95%, 330px);
+  background: hsl(0, 0%, 100%);
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid hsl(0, 0%, 7%);
+
+    box-shadow: 10px 10px 0px 0px hsl(0, 0%, 7%);
+  .preview-img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .blog-content {
+    text-align: left;
+    margin-top: 15px;
+    .tag {
+      width: max-content;
+      background-color: hsl(47, 88%, 63%);
+      padding: 5px 10px;
+      font-size: 14px;
+      font-weight: 800;
+      border-radius: 5px;
+    }
+
+    .info {
+      margin-top: 10px;
+      color: hsl(0, 0%, 7%);
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .heading {
+      margin: 10px 0;
+      font-weight: 800;
+      color: hsl(0, 0%, 7%);
+    }
+
+    .description {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      color: hsl(0, 0%, 42%);
+    }
+  }
+
+  .user-info {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+   
+    .user-profile {
+      width: 30px;
+    }
+
+    .user-name{
+         font-size: 14px;
+    color: hsl(0, 0%, 7%);
+    font-weight: 800;
+    }
+  }
+}
